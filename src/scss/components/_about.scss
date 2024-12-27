@@ -1,10 +1,12 @@
 * {
     box-sizing: border-box;
   } 
-  body{
-      overflow: hidden;
-  }
   
+  #your-element-selector {
+    position: relative;
+    height: 100vh; /* Высота окна браузера */
+}
+
   .container{
       position: absolute;
       left:50%;
@@ -27,23 +29,27 @@
     transition: 0.5s;
     background-size: cover;
     position: absolute;
-    z-index: 1;
+    z-index: 1;  /* Контент поверх псевдоэлемента */
     top: 50%;
     transform: translate(0, -50%);
     border-radius: 20px;
     box-shadow: 0 30px 50px #505050;
     overflow: hidden;
-  }
-  .item::before {
+}
+
+.item::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3); /* Черный с прозрачностью 0.3 */
-    z-index: 1;
-  }
+    background-color: rgba(0, 0, 0, 0.2); /* Полупрозрачный черный фон */
+    z-index: 0;  /* Псевдоэлемент будет за содержимым */
+}
+
+/* Остальной CSS остается без изменений */
+
   .item .content {
     position: absolute;
     top: 50%;
@@ -145,10 +151,10 @@
   .buttons{
     position: absolute;
     bottom:30px;
-    z-index: 1;
     text-align: center;
     width:100%;
     left: 0;
+    z-index: 8;
   }
   .buttons button{
       width:50px;
@@ -208,4 +214,5 @@
 .buttons button:hover i {
     color: #ff7300; /* Цвет иконки на hover */
 }
+
 
