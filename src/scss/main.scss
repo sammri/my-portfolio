@@ -1,0 +1,18 @@
+// src/scss/main.scss
+
+// Импорты базовых стилей
+@import "global/base/reset";
+@import "global/base/typography";
+
+// Импорты утилит
+@import "utils/mixins";
+@import "utils/placeholders";
+@import "utils/variables";
+
+// Импорты компонентов и разметки
+// @import "global/layout/header";
+// @import "global/layout/footer";
+// @import "global/layout/title";
+@import "components/home";
+@import "components/about";
+@import "components/backhome";

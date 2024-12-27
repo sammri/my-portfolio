@@ -1,0 +1,88 @@
+.back-container {
+    position: absolute;
+    left: 18px;
+    top: 30px;
+}
+
+.back-button {
+    position: relative;
+    display: inline-block;
+}
+
+.back-button::before,
+.back-button::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 2px solid red;
+    top: -5px;
+    left: 50%;
+    z-index: 1;
+    transition: all 1s ease;
+    margin-left: -30px;
+}
+.back-button::before{
+    animation: rotateAnimation 5s infinite linear;
+}
+.back-button::after{
+    animation: rotateAnimation 5.2s infinite linear;
+}
+.back-text {
+    position: relative;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 40px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+
+.back-text::before,
+.back-text::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+}
+
+.back-text::before {
+    left: 0;
+    z-index: 2;
+}
+
+.back-text::after {
+    right: 0;
+}
+
+.back-text span {
+    position: relative;
+    z-index: 2;
+}
+
+.back-button:hover::before,
+.back-button:hover::after {
+    left: 100%;
+    opacity: 0;
+    filter: blur(20px);
+}
+
+.back-button:hover .back-text::before {
+    width: 100%;
+
+}
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
