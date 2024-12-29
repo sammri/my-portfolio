@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
   </head>
   <body >
-    <main id="your-element-selector">
+    <main id="your-element-selector" data-aos="zoom-in">
       <div class="back-container" >
         <a href="../../index.html" class="back-button">
           <span class="back-text">
@@ -22,45 +22,52 @@
           <div class="item" style="background-image: url(https://images.unsplash.com/photo-1542831371-d531d36971e6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTkxODM5MDd8&ixlib=rb-4.0.3&q=85&width=1800);">
             <div class="content">
               <div class="name">HTML</div>
-              <div class="des">HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript)</div>
+              <div class="time">More than a year</div>
+              <div class="des">"HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript)</div>
                <a href="https://html-plus.in.ua/category/html/" target="_blank">Read more</a>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(../img/languages/sass.png);">
+            <div class="content">
+              <div class="name">Sass</div>
+              <div class="time">More than six months</div>
+              <div class="des">"Sass allows you to use features that are not found in CSS itself, such as variables, nesting, mixins, and much more."</div>
+             <a href="https://html-plus.in.ua/category/php/" target="_blank">Read more</a>
             </div>
           </div>
           <div class="item" style="background-image: url(https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTkxODM5OTV8&ixlib=rb-4.0.3&q=85&width=1800);">
             <div class="content">
               <div class="name">CSS</div>
-              <div class="des">CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media.</div>
+              <div class="time">More than a year</div>
+              <div class="des">"CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media."</div>
                <a href="https://html-plus.in.ua/category/css/" target="_blank">Read more</a>
             </div>
           </div>
           <div class="item" style="background-image: url(https://images.unsplash.com/photo-1643116774075-acc00caa9a7b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTkxODQxOTR8&ixlib=rb-4.0.3&q=85&width=1800);">
             <div class="content">
               <div class="name">JavaScript</div>
-              <div class="des">JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else.</div>
+              <div class="time">More than a month</div>
+              <div class="des">"JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else."</div>
               <a href="https://html-plus.in.ua/category/javascript/" target="_blank">Read more</a>
             </div>
           </div>
           <div class="item" style="background-image: url(https://getbootstrap.com/docs/5.3/assets/img/bootstrap-icons.png);">
             <div class="content">
               <div class="name">Bootstrap</div>
-              <div class="des">Bootstrap is a free, open source front-end development framework for the creation of websites and web apps. Designed to enable responsive development of mobile-first websites, Bootstrap provides a collection of syntax for template designs.</div>
+              <div class="time">More than six months</div>
+              <div class="des">"Bootstrap is a free, open source front-end development framework for the creation of websites and web apps. Designed to enable responsive development of mobile-first websites, Bootstrap provides a collection of syntax for template designs."</div>
               <a href="https://html-plus.in.ua/category/bootstrap/" target="_blank">Read more</a>
             </div>
           </div>
           <div class="item" style="background-image: url(https://images.unsplash.com/photo-1560472355-109703aa3edc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTkxODQyNTR8&ixlib=rb-4.0.3&q=85&width=1800);">
             <div class="content">
               <div class="name">WordPress</div>
-              <div class="des">WordPress is open source software. WordPress is designed for everyone. It is welcoming and inclusive.</div>
+              <div class="time">More than a month</div>
+              <div class="des">"WordPress is open source software. WordPress is designed for everyone. It is welcoming and inclusive."</div>
                <a href="https://html-plus.in.ua/category/wordpress/" target="_blank">Read more</a>
             </div>
           </div>  
-          <div class="item" style="background-image: url(../img/languages/sass.png);">
-            <div class="content">
-              <div class="name">Sass</div>
-              <div class="des">Sass allows you to use features that are not found in CSS itself, such as variables, nesting, mixins, and much more.</div>
-             <a href="https://html-plus.in.ua/category/php/" target="_blank">Read more</a>
-            </div>
-          </div>
+          
         </div>
         <div class="buttons">
           <button id="prev"><i class='bx bx-chevron-left'></i></button>
@@ -72,6 +79,10 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="../js/about.js"></script>
   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
   <script src="../js/vanta-about/three.r134.min.js"></script>
 <script src="../js/vanta-about/vanta.net.min.js"></script>
@@ -81,7 +92,7 @@
     mouseControls: true,
     touchControls: true,
     gyroControls: false,
-    minHeight: 1500.00,
+    minHeight: 100.00,
     minWidth: 100.00,
     scale: 1.00,
     scaleMobile: 1.00,

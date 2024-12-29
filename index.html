@@ -1,88 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
 
-	<script src="./src/libs/gsap/gsap.min.js" defer></script>
+    <script src="./src/libs/gsap/gsap.min.js" defer></script>
 
-	<script src="./src/libs/swiper/swiper-bundle.min.js" defer></script>
-	<link rel="stylesheet" href="./src/libs/swiper/swiper-bundle.min.css">
-	<link rel="stylesheet" href="src/css/main.css?v=123">
+    <script src="./src/libs/swiper/swiper-bundle.min.js" defer></script>
+    <link rel="stylesheet" href="./src/libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="src/css/main.css?v=123" />
 
+    <script src="src/js/app.js" defer></script>
+  </head>
+  <body>
+    <main style="background-color: #000">
+      <div class="top-line">
+        <div>
+          <div class="logo">
+            <h2 style="font-size: 30px">HOME</h2>
+          </div>
+        </div>
+        <div>
+          <ul class="main-mnu">
+            <li><a href="./src/pages/about.html">About</a></li>
+            <li><a href="./src/pages/projects.html">Projects</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
 
-	<script src="src/js/app.js" defer></script>
+      <div class="swiper slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div class="slide__content">
+              <h2>About me</h2>
+              <p>Find out about me</p>
+              <a href="./src/pages/about.html" class="link-slide">Сheck out</a>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="slide__content">
+              <h2>Projects</h2>
+              <p>Check out my sites</p>
+              <a href="./src/pages/projects.html" class="link-slide"
+                >Сheck out</a
+              >
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="slide__content">
+              <h2>Future</h2>
+              <p>find out about my dreams and plans</p>
+              <a href="#" class="link-slide">Сheck out</a>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="slide__content">
+              <h2>Forever</h2>
+              <p>Designing for the future</p>
+              <a href="#" class="link-slide">Сheck out</a>
+            </div>
+          </div>
+        </div>
 
-</head>
-<body>
-<main style="background-color: #000;">
-	
-	<div class="top-line">
-		<div>
-			<div class="logo">
-				<h2 style="font-size: 30px;">HOME</h2>
-			</div>
-		</div>
-		<div>
-			<ul class="main-mnu">
-				<li><a href="./src/pages/about.html">About</a></li>
-				<li><a href="./src/pages/projects.html">Projects</a></li>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</div>
-</div>
+        <div class="slider-bottom">
+          <div class="slider-pagination">
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="slider-navigation">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
 
-<div class="swiper slider">
+      <video
+        src="./src/media/background.mp4"
+        class="video-background"
+        muted
+      ></video>
+    </main>
 
-	<div class="swiper-wrapper">
-
-		<div class="swiper-slide slide">
-			<div class="slide__content">
-				<h2>About me</h2>
-				<p>Find out about me</p>
-				<a href="./src/pages/about.html" class="link-slide">Сheck out</a>
-			</div>
-		</div>
-		<div class="swiper-slide slide">
-			<div class="slide__content">
-				<h2>Projects</h2>
-				<p>Check out my sites</p>
-				<a href="./src/pages/projects.html" class="link-slide">Сheck out</a>
-			</div>
-		</div>
-		<div class="swiper-slide slide">
-			<div class="slide__content">
-				<h2>Future</h2>
-				<p>find out about my dreams and plans</p>
-				<a href="#" class="link-slide">Сheck out</a>
-			</div>
-		</div>
-		<div class="swiper-slide slide">
-			<div class="slide__content">
-				<h2>Forever</h2>
-				<p>Designing for the future</p>
-				<a href="#" class="link-slide">Сheck out</a>
-			</div>
-		</div>
-
-	</div>
-
-	<div class="slider-bottom">
-		<div class="slider-pagination">
-			<div class="swiper-pagination"></div>
-		</div>
-		<div class="slider-navigation">
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>
-		</div>
-	</div>
-
-</div>
-
-<video src="./src/media/background.mp4" class="video-background" muted></video>
-</main>
-
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

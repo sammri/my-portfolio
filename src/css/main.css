@@ -419,6 +419,11 @@ body {
   animation: showcontent 1s ease-in-out 1 forwards;
 }
 
+.item .time {
+  opacity: 0;
+  animation: showcontent 1s ease-in-out 1 forwards;
+}
+
 .item .des {
   margin: 20px 0;
   opacity: 0;
